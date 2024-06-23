@@ -1,0 +1,38 @@
+.card {
+    background: var(--surface-card);
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.icon-step {
+    display: flex;
+    width: 2rem;
+    height: 2rem;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 100%;
+    z-index: 1;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.02), 0px 0px 2px rgba(0, 0, 0, 0.05), 0px 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+.card-paragraph {
+    white-space: pre-line;
+    text-align: left;
+}
+
+@media screen and (max-width: 991px) {
+    .customized-timeline .p-timeline-event:nth-child(even) {
+        flex-direction: row !important;
+    }
+    .customized-timeline .p-timeline-event:nth-child(even) .p-timeline-event-content {
+        text-align: left !important;
+    }
+    .customized-timeline .p-timeline-event-opposite {
+        flex: 0;
+    }
+    .customized-timeline .p-card {
+        margin-top: 1rem;
+    }
+}
